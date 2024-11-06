@@ -1,6 +1,34 @@
 
 #a)
-all_expert_ids <- c(1111, 2222, 3333, 4444, 5555, 6666, 1234)
+all_expert_ids <- c("ag@nhta.com",
+                    "ac@nhta.com",
+                    "ap@nhta.com",
+                    "ar@nhta.com",
+                    "al@nhta.com",
+                    "apm@nhta.com",
+                    "ccp@nhta.com",
+                    "chh@nhta.com",
+                    "cp@nhta.com",
+                    "do@nhta.com",
+                    "et@nhta.com",
+                    "jk@nhta.com",
+                    "js@nhta.com",
+                    "kl@nhta.com",
+                    "kpm@nhta.com",
+                    "kgh@nhta.com",
+                    "lt@nhta.com",
+                    "ls@nhta.com",
+                    "lk@nhta.com",
+                    "nm@nhta.com",
+                    "nk@nhta.com",
+                    "rk@nhta.com",
+                    "sh@nhta.com",
+                    "sr@nhta.com",
+                    "tha@nhta.com",
+                    "tk@nhta.com",
+                    "yb@nhta.com",
+                    "zx@nhta.com",
+                    "zz@nhta.com")
 # list all expert's unique identifiers.
 # experts will only be able to access the app if they enter one of your preset
 # unique identifiers. The unique identifiers are used to save experts' answers,

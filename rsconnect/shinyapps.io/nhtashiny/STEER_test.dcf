@@ -5,7 +5,7 @@ account: nhtashiny
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 12563307
-bundleId: 9042833
+bundleId: 9324517
 url: https://nhtashiny.shinyapps.io/STEER_test/
 version: 1
 asMultiple: FALSE
