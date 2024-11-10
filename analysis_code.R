@@ -152,8 +152,6 @@ if(elicitation_method == "chips and bins"){
     chips_upper <- chips_lbins[length(chips_lbins)] # upper end of the grid
     chips_nchip <- sum(chips_chips) # total number of chips used
 
-
-
     # ADD CODE TO DRAW THE HISTOGRAM, THEN FACET ALL GRAPHS FOR THAT QUESTION
     par(ps = 12, mar = c(4, 0, 0, 0))
     plot(c(chips_lower, chips_upper), c(0, 0),
@@ -287,7 +285,6 @@ for (i in 1:length(names(eli_que_answers))) {
     elicited_probs <- c(0.01, 0.33, 0.66, 0.99)
 
   }
-
 
   save_fitted_dist[[file_name2]] <-
     fitdist(elicited_value, elicited_probs,

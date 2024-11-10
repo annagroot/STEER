@@ -1,34 +1,41 @@
 
 #a)
-all_expert_ids <- c("ag@nhta.com",
-                    "ac@nhta.com",
-                    "ap@nhta.com",
-                    "ar@nhta.com",
-                    "al@nhta.com",
-                    "apm@nhta.com",
-                    "ccp@nhta.com",
-                    "chh@nhta.com",
-                    "cp@nhta.com",
-                    "do@nhta.com",
-                    "et@nhta.com",
-                    "jk@nhta.com",
-                    "js@nhta.com",
-                    "kl@nhta.com",
-                    "kpm@nhta.com",
-                    "kgh@nhta.com",
-                    "lt@nhta.com",
-                    "ls@nhta.com",
-                    "lk@nhta.com",
-                    "nm@nhta.com",
-                    "nk@nhta.com",
-                    "rk@nhta.com",
-                    "sh@nhta.com",
-                    "sr@nhta.com",
-                    "tha@nhta.com",
-                    "tk@nhta.com",
-                    "yb@nhta.com",
-                    "zx@nhta.com",
-                    "zz@nhta.com")
+# all_expert_ids <- c("ag@nhta.com",
+#                     "ac@nhta.com",
+#                     "ap@nhta.com",
+#                     "ar@nhta.com",
+#                     "al@nhta.com",
+#                     "apm@nhta.com",
+#                     "ccp@nhta.com",
+#                     "chh@nhta.com",
+#                     "cp@nhta.com",
+#                     "do@nhta.com",
+#                     "et@nhta.com",
+#                     "jk@nhta.com",
+#                     "js@nhta.com",
+#                     "kl@nhta.com",
+#                     "kpm@nhta.com",
+#                     "kgh@nhta.com",
+#                     "lt@nhta.com",
+#                     "ls@nhta.com",
+#                     "lk@nhta.com",
+#                     "nm@nhta.com",
+#                     "nk@nhta.com",
+#                     "rk@nhta.com",
+#                     "sh@nhta.com",
+#                     "sr@nhta.com",
+#                     "tha@nhta.com",
+#                     "tk@nhta.com",
+#                     "yb@nhta.com",
+#                     "zx@nhta.com",
+#                     "zz@nhta.com")
+
+all_expert_ids <- c(1111,
+                    2222,
+                    3333,
+                    4444,
+                    5555)
+
 # list all expert's unique identifiers.
 # experts will only be able to access the app if they enter one of your preset
 # unique identifiers. The unique identifiers are used to save experts' answers,
@@ -56,8 +63,8 @@ elicitation_method <- "quartiles"
 #e)
 # quantities being elicited e.g. proportion, rate, duration
 # The length of "quantity" determines the number of questions in the app
-quantity <- c("proportion of families who own a pet",
-              "average age of course participants")
+quantity <- c("proportion of NHTA who had a pet when growing up",
+              "(LAURA TO INSERT) average age of course participants")
 # Feeds into:
 # 1. "I believe it is very unlikely that
 # - the >>quantity<< is greater than x
@@ -80,8 +87,8 @@ quant_limit_upper <- c(100, NA)
 
 #h)
 eli_que_text <- c(
-  "What proportion of UK households has a pet?",
-  "What is the average age of the course participants?"
+  "What proportion of NHTA has had a pet when growing up?",
+  "(LAURA TO INSERT QUESTION)What is the average age of the course participants?"
 )
 #length should be the same as "quantity", "units", "quant_limit_lower" and "quant_limit_upper"
 

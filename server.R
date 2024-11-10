@@ -1371,7 +1371,8 @@ if(save_method == "local"){
 
   ##### UI interfaces for each tab #####
 
-  ## home page
+  #### home page ####
+
   output$tab_home<-renderUI({
 
     tagList(div(
@@ -1381,9 +1382,12 @@ if(save_method == "local"){
 
         tagList(div(br(),
                     if(save_method == "local" & buttons$enter_previous_responses == 0){
+
                       p(strong("Is this the first time you are completing this exercise?"),
+
                         radioButtons("radio_previous_responses", "", choices = c("Yes" = 1, "No" = 2), selected = 1),
                         column(1, offset = 9, actionButton("enter_previous_responses", "Enter", width='120px', style="background-color: lightgrey"))
+
                       )} else if (save_method == "local" & buttons$enter_previous_responses == 1 & buttons$radio_previous_responses == 2) {
                       p("Please load your previous answers by clicking on 'Browse' and selecting
                         the most recent saved file, then click on enter to continue.", br(), br(),
@@ -1428,11 +1432,12 @@ if(save_method == "local"){
           if(save_method == "dropbox"){
             fluidRow(
               column(9, p(style="font-size:90%;", "Please click on 'Next' to continue")),
-              column(1, actionButton("next_home", "Save", width='120px', style="background-color: lightgrey"))
+              column(1, actionButton("next_home", "Next", width='120px', style="background-color: lightgrey"))
           )
           } else {
             fluidRow(
-              column(9, p(style="font-size:90%;", "Please click on 'Next' to continue")),
+              column(8, p(style="font-size:90%;", "Please click on 'Next' to continue")),
+              column(1, actionButton("next_home", "Next", width='120px', style="background-color: lightgrey")), #AG change
               column(1, downloadButton("download_about_you", "Save", width='120px', style="background-color: lightgrey"))
             )
           }
@@ -1441,7 +1446,7 @@ if(save_method == "local"){
 
       } else {
 
-        "Thank you. You may proceed to the 'Instrcutions' tab"
+        "Thank you. You may proceed to the 'Instructions' tab"
 
       }
 
@@ -1450,7 +1455,7 @@ if(save_method == "local"){
   }) #close output$tab_home
 
 
-  ## Instructions/training
+  #### Instructions/training ####
   output$tab_instructions<-renderUI({
 
     if (buttons$enter_unique_id == 0) {
@@ -1594,7 +1599,7 @@ if(save_method == "local"){
   }) #close output$tab_instructions
 
 
-  ## Background information (should be bespoke)
+  #### Background information (should be bespoke) ####
   output$tab_background_info<-renderUI({
 
     if (buttons$enter_unique_id == 0) {
@@ -1615,7 +1620,7 @@ if(save_method == "local"){
 
       tagList(div(
         br(),br(),
-        includeHTML("www/text_background_info.htm"), br(),
+        # includeHTML("www/text_background_info.htm"), br(), #AG to fix
         fluidRow(
           column(8, p(style="font-size:90%;", "Please click on 'Next' to start the exercise.")),
           column(1, offset=1, tagList(div(actionButton("start_que", "Next", width='120px', style="background-color: lightgrey"))))),br(),

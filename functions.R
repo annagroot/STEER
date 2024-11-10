@@ -1,4 +1,6 @@
 
+library(bslib)
+
 # total number of elicitation questions
 tot_eli_ques <- length (quantity)
 
@@ -475,7 +477,31 @@ f_load_answers <- function(unique_id) {
 
 }
 
+####### NHTA theming #######
+add_logo_footer <- function() {
+  div(
+    class = "footer",
+    style = "position: relative; bottom: 0; width: 100%; text-align: center;",
+    img(src = "nhtalogo.png", height = "100px")  # Adjust height as needed
+  )
+}
 
+
+theme_NHTA <- bs_theme(version = 5,
+                       bg = "#f8f9fa", fg = "#000000",  # Ensure both background and foreground colors are set
+                       primary = "#4C8187", secondary = "#214E70",
+                       base_font = font_google("Questrial"),
+                       heading_font = font_google("Questrial"))
+
+
+colors_chart <- c("#4C8187",
+                  "#214E70",
+                  "#AF8446",
+                  "#6D7376",
+                  "#4D84B4",
+                  "#4E6A4D",
+                  "#68592B"
+)
 
 
 
